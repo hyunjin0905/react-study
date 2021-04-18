@@ -3,7 +3,7 @@ import React, { Component} from "react";
 
 
 
-export default class Curring extends Component {
+export default class CurringFuc extends Component {
     constructor(props) {
         super(props);
         console.log(props);

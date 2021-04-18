@@ -1,6 +1,8 @@
 import ReactRef from "./part_03/ReactRef";
-import Curring from "./part_03/Curring";
+import CurringFuc from "./part_03/CurringFuc";
 import ReactHoc from "./part_03/ReactHoc";
+import ContextApi from "./part_03/ContextApi";
+import UpdateContext from "./part_03/UpdateContext";
 
 function App() {
   return (
@@ -8,9 +10,11 @@ function App() {
       <h1>react study</h1>
       <ReactRef/>
       <br/>
-      <Curring/>
+      <CurringFuc/>
       <br/>
       <ReactHoc name={"ReactHoc"}/>
+        <br/>
+     <UpdateContext/>
     </div>
   );
 }
