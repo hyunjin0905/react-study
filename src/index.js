@@ -3,13 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createStore } from "redux";
+import reducers from "./reducers";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const store = createStore(reducers)
+
+
+const listener = () => {
+    ReactDOM.render(
+            <App store = {store} />,
+        document.getElementById('root')
+    );
+}
+
+store.subscribe(listener);
+listener();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
