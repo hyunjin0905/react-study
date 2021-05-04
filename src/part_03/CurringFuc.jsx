@@ -17,10 +17,16 @@ export default class CurringFuc extends Component {
         return function (b) { return this.plusNumOrString(a, b) }.bind(this);
     }
 
+    plusFunc3 = (a) => {
+        return function (b) {
+            return a + b
+        }
+    }
+
     plusFunc2 = a => b => this.plusNumOrString(a, b)
 
     plusFunc = (a) => {
-        return this.plusFunc1(a)(200)
+        return this.plusFunc3(a)(200)
 
     }
 
