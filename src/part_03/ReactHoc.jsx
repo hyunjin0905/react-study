@@ -8,7 +8,9 @@ class ReactHoc extends Component {
         console.log("2. HocComponent render")
 
         return (
-            <h2>{this.props.name}</h2>
+            <>
+
+            </>
         );
     }
 }

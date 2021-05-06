@@ -4,7 +4,7 @@ import ReactHoc from "./part_03/ReactHoc";
 import ContextApi from "./part_03/ContextApi";
 import UpdateContext from "./part_03/UpdateContext";
 import SpreadOperator from "./part_01/spread";
-
+import LifeCycleEx from "./part_01/LifeCycleEx";
 
 
 
@@ -12,17 +12,7 @@ import SpreadOperator from "./part_01/spread";
 function App() {
   return (
     <div>
-      <h1>react study</h1>
-      <ReactRef/>
-      <br/>
-      <CurringFuc/>
-      <br/>
-      <ReactHoc name={"ReactHoc"}/>
-
-        <br/>
-     <UpdateContext/>
-        <br/>
-        <SpreadOperator/>
+        <LifeCycleEx prop_value="FromApp.js"/>
     </div>
   );
 }
