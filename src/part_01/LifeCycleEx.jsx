@@ -17,6 +17,13 @@ class LifeCycleEx extends Component {
         console.log('4 componentDidMount Call')
         console.log('5 tmp_state', this.state.tmp_state)
         this.setState({tmp_state2: true})
+        var jsString1 = "자바스크립트";
+        var jsString2 = "입니다";
+        var longString = "es6에 추가된 string 함수들입니다"
+        console.log(`${jsString1} 문자열 ${jsString2}`)
+        console.log(longString.startsWith("es6에 추가된"));
+        console.log(longString.endsWith("함수들입니다"));
+        console.log(longString.includes("추가된 string"))
     }
 
     shouldComponentUpdate(props, state) {
