@@ -6,14 +6,15 @@ import UpdateContext from "./part_03/UpdateContext";
 import SpreadOperator from "./part_01/spread";
 import LifeCycleEx from "./part_01/LifeCycleEx";
 import Variable from "./part_01/Variable";
-
+import ClassPrototype from "./part_01/ClassPrototype";
+import ArrowFunction from "./part_01/ArrowFunction";
 
 
 
 function App() {
   return (
     <div>
-        <Variable />
+        <ArrowFunction />
     </div>
   );
 }
