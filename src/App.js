@@ -11,12 +11,13 @@ import ArrowFunction from "./part_01/ArrowFunction";
 import ForEachAndMap from "./part_01/ForEachAndMap";
 import { PureComponentClass, ComponentClass } from "./part_01/PureComponentClass";
 import { default as ShallowEqual } from "./part_01/ShallowEqual";
+import Promise from "./part_02/Promise";
 
 
 function App() {
   return (
     <div>
-        <LifeCycleEx/>
+        <Promise/>
     </div>
   );
 }
