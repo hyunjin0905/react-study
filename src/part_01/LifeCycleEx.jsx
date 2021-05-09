@@ -7,7 +7,7 @@ class LifeCycleEx extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = { react: 200};
         console.log('1. constructor call');
     }
 
@@ -24,6 +24,8 @@ class LifeCycleEx extends Component {
         console.log(longString.startsWith("es6에 추가된"));
         console.log(longString.endsWith("함수들입니다"));
         console.log(longString.includes("추가된 string"))
+
+
     }
 
     shouldComponentUpdate(props, state) {
@@ -31,10 +33,24 @@ class LifeCycleEx extends Component {
         return state.tmp_state2;
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log("componentDidUpdate Call", prevProps, prevState);
+    }
+
+    componentWillUnmount() {
+        console.log("componentWillUnmount")
+    }
+
+    onHandleClick = () => {
+        this.setState({react: 201})
+    }
+
     render() {
         console.log('3. render Call')
         return (
-            <></>
+            <>
+                <button onClick={this.onHandleClick}>gg</button>
+            </>
         );
     }
 }
