@@ -19,6 +19,7 @@ class ArrowFunction extends Component {
         this.Function4();
         this.Function5(0,2,3);
         function Function1(num1) {
+            console.log("this", this)
             return console.log(num1 +'. Es5 Function');
         }
     }
@@ -32,15 +33,17 @@ class ArrowFunction extends Component {
         var this_bind = this;
         setTimeout(function () {
             console.log(this_bind.state.num + '. Es5 callback function noBind : ');
-            console.log(this.state.arrowFuc)
+            console.log(this_bind.state.arrowFuc)
         },100);
     }
 
     Function4() {
         console.log(this);
+        var this_bind = this;
         setTimeout(function () {
-            console.log(this);
-            console.log('4. Es5 Callback Function Bind : '+ this.state.arrowFuc);
+            console.log("this", this);
+            console.log(this_bind);
+            console.log('4. Es5 Callback Function Bind : '+ this_bind.state.arrowFuc);
         },100);
     }
 

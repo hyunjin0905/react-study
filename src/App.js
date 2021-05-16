@@ -17,7 +17,7 @@ import Promise from "./part_02/Promise";
 function App() {
   return (
     <div>
-        <Promise/>
+        <ClassPrototype/>
     </div>
   );
 }
