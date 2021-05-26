@@ -26,7 +26,6 @@ class PureComponentClass extends PureComponent {
             <>
                 <button onClick={e => this.buttonClick("string")}> 문자열 변경</button>
                 <button onClick={e => this.buttonClick("ArrayObject")}> 객체 배열 변경</button>
-
             </>
         );
     }

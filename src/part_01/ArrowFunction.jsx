@@ -19,14 +19,13 @@ class ArrowFunction extends Component {
         this.Function4();
         this.Function5(0,2,3);
         function Function1(num1) {
-            console.log("this", this)
             return console.log(num1 +'. Es5 Function');
         }
     }
 
     Function2 = (num1, num2) => {
         let num3 = num1 + num2;
-        console.log(num3+ ". Arrow Function : " + this.state.arrowFuc);
+        console.log(num3+ ". Arrow Function : " , this);
     }
 
     Function3() {
