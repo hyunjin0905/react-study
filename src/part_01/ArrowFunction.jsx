@@ -21,16 +21,32 @@ class ArrowFunction extends Component {
         function Function1(num1) {
             return console.log(num1 +'. Es5 Function');
         }
+        const materials = [
+            'Hydrogen',
+            'Helium',
+            'Lithium',
+            'Beryllium'
+        ];
+
+        console.log(materials.map(material => material.length));
+        console.log(materials.map(function a(data){
+            return this;
+        }))
+// expected output: Array [8, 6, 7, 9]
+
     }
 
     Function2 = (num1, num2) => {
+
         let num3 = num1 + num2;
         console.log(num3+ ". Arrow Function : " , this);
     }
 
     Function3() {
+        console.log(this);
         var this_bind = this;
         setTimeout(function () {
+            console.log(this)
             console.log(this_bind.state.num + '. Es5 callback function noBind : ');
             console.log(this_bind.state.arrowFuc)
         },100);
@@ -49,11 +65,13 @@ class ArrowFunction extends Component {
     Function5 = (num1, num2, num3) => {
         const num4 = num1 + num2 + num3;
         setTimeout(() => {
-            console.log(this);
+            console.log("this",this);
+
             console.log(num4 + 'Arrow Callback Function : ' + this.state.arrowFuc)
         }, 100)
 
     }
+
 
     render() {
         return (
