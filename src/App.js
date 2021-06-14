@@ -12,12 +12,12 @@ import ForEachAndMap from "./part_01/ForEachAndMap";
 import { PureComponentClass, ComponentClass } from "./part_01/PureComponentClass";
 import { default as ShallowEqual } from "./part_01/ShallowEqual";
 import Promise from "./part_02/Promise";
-
+import Item from "./Test/Item"
 
 function App() {
   return (
     <div>
-        <ArrowFunction/>
+        <Item/>
     </div>
   );
 }
