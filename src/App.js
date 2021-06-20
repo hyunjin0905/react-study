@@ -13,11 +13,12 @@ import { PureComponentClass, ComponentClass } from "./part_01/PureComponentClass
 import { default as ShallowEqual } from "./part_01/ShallowEqual";
 import Promise from "./part_02/Promise";
 import Item from "./Test/Item"
+import ForwardRef from "./part_00/ForwradRef";
 
 function App() {
   return (
     <div>
-        <Item/>
+        <ForwardRef/>
     </div>
   );
 }
