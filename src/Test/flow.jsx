@@ -8,24 +8,20 @@ import React, {
     ReactNode
 } from "react";
 
-export type FlowProps = {
-    currentStep?: number;
-    handlePrev?: () => void;
-    onClose?: () => void;
-    initialStep?: number;
-    children: ReactNode;
-};
 
-export const Flow = React.forwardRef((props: FlowProps, ref) => {
+export const Flow = React.forwardRef((props, ref) => {
     const { children, onClose, initialStep, currentStep } = props;
+    console.log(children);
+    console.log(Children);
     const length = Children.count(children);
-    const [ step, setStep ] = useState<number>(initialStep ?? 0);
+    const [ step, setStep ] = useState(initialStep ?? 0);
     const next = useCallback(() => {
         setStep((prev) => {
             return prev + 1 >= length ? prev : prev + 1;
         });
     }, [ setStep, length ]);
 
+    // setStep 빼보기!!!!
     const prev = useCallback(() => {
         setStep((prev) => {
             if (prev === 0) {
@@ -35,6 +31,7 @@ export const Flow = React.forwardRef((props: FlowProps, ref) => {
 
         });
     }, [ setStep ]);
+    // setStep 빼보기!!!!
 
     useImperativeHandle(ref, () => {
         return {

@@ -14,11 +14,13 @@ import { default as ShallowEqual } from "./part_01/ShallowEqual";
 import Promise from "./part_02/Promise";
 import Item from "./Test/Item"
 import ForwardRef from "./part_00/ForwradRef";
+import Page from "./Test/page";
+import Children from "./part_00/Children";
 
 function App() {
   return (
     <div>
-        <ForwardRef/>
+        <Children/>
     </div>
   );
 }
