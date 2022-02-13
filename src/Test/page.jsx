@@ -1,7 +1,7 @@
 import React from "react";
-import { ComponentClass } from "../part_01/PureComponentClass";
-import ShallowEqual from "../part_01/ShallowEqual";
-import SpreadOperator from "../part_01/spread";
+import { ComponentClass } from "../리액트200제/part_01/PureComponentClass";
+import ShallowEqual from "../리액트200제/part_01/ShallowEqual";
+import SpreadOperator from "../리액트200제/part_01/spread";
 import {Flow} from "./flow";
 
 
