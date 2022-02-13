@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App3 from './App';
 import reportWebVitals from './reportWebVitals';
 import { createStore } from "redux";
 import reducers from "./reducers";
@@ -11,7 +11,7 @@ const store = createStore(reducers)
 
 const listener = () => {
     ReactDOM.render(
-            <App store = {store} />,
+            <App3 store = {store} />,
         document.getElementById('root')
     );
 }
