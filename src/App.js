@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {BrowserRouter, Link, Route} from "react-router-dom";
-import Rooms from "./실전리액트프로그래밍/part_00/Rooms";
+import Rooms from "../실전리액트프로그래밍/part_01/Rooms";
 // react-router-dom 으로 작성한 싱글 페이지 어플리케이션
 function App() {
     return (
