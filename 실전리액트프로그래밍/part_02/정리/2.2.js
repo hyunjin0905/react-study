@@ -52,3 +52,7 @@ const arr = [1, 2];
 const [a, b] = arr;
 console.log(a)
 console.log(b)
+
+let a, b;
+[a, b] = [1, 2];
+
