@@ -53,6 +53,10 @@ const [a, b] = arr;
 console.log(a)
 console.log(b)
 
-let a, b;
-[a, b] = [1, 2];
+const arr3 = [1];
+const [c = 10, d = 20] = arr3;
+console.log(c)
+console.log(d);
+
+
 
