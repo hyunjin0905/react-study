@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {BrowserRouter, Link, Route} from "react-router-dom";
-import Rooms from "../실전리액트프로그래밍/part_01/Rooms";
+import Rooms from "./실전리액트프로그래밍/part_01/Rooms";
+import Todo from "./실전리액트프로그래밍/part_03/todo";
 // react-router-dom 으로 작성한 싱글 페이지 어플리케이션
 function App() {
     return (
@@ -12,9 +13,11 @@ function App() {
                 <br />
                 <Link to="/rooms">방 소개</Link>
                 <br />
+                <Link to="/todo">todolist</Link>
+                <br />
                 <Route exact path="/" component={Home}/>
                 <Route path="/photo" component={Photo}/>
-                <Route path="/rooms" component={Rooms}/>
+                <Route path="/todo" component={Todo}/>
             </div>
         </BrowserRouter>
     )
