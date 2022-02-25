@@ -14,9 +14,6 @@ function Todo() {
         const newTodoList = todoList.filter(todo => todo.id !== id);
         setTodoList(newTodoList)
     }
-    function onSaveServer() {
-
-    }
 
     return (
         <div>
@@ -31,7 +28,6 @@ function Todo() {
             </ul>
             <input type="text" value={desc} onChange={e=> setDesc(e.target.value)}/>
             <button onClick={onAdd}>추가</button>
-            <button onClick={onSaveServer}>서버에 저장</button>
         </div>
     )
 }
