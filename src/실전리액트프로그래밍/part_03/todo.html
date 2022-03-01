@@ -38,7 +38,7 @@
         liEl.appendChild(buttonEl)
         return liEl;
     }
-    
+
     function onDelete(e) {
         const id = Number(e.target.dataset.id);
         const index = todoList.findIndex(item => item.id === id);
