@@ -1,23 +1,25 @@
-import { useEffect, useState } from "react";
+import {useEffect, useRef, useState} from "react";
 import {BrowserRouter, Link, Route} from "react-router-dom";
-import Rooms from "./실전리액트프로그래밍/part_01/Rooms";
 import Todo from "./실전리액트프로그래밍/part_03/todo";
+import {Profile} from "./실전리액트프로그래밍/part_03/UseRefExample";
+import {CountBefore} from "./실전리액트프로그래밍/part_03/useMemoBefore";
+import {CountAfter} from "./실전리액트프로그래밍/part_03/useMemoAfter";
 // react-router-dom 으로 작성한 싱글 페이지 어플리케이션
 function App() {
     return (
         <BrowserRouter>
             <div>
-                <Link to="/" >홈</Link>
+
+                <Link to="/useRef">useRef</Link>
                 <br />
-                <Link to="/photo">사진</Link>
+                <Link to="/useMemoAfter">useMemoAfter</Link>
                 <br />
-                <Link to="/rooms">방 소개</Link>
-                <br />
-                <Link to="/todo">todolist</Link>
+                <Link to="/useMemoBefore">useMemoBefore</Link>
                 <br />
                 <Route exact path="/" component={Home}/>
-                <Route path="/photo" component={Photo}/>
-                <Route path="/todo" component={Todo}/>
+                <Route path="/useRef" component={Profile}/>
+                <Route path="/useMemoAfter" component={CountAfter}/>
+                <Route path="/useMemoBefore" component={CountBefore}/>
             </div>
         </BrowserRouter>
     )
