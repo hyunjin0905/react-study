@@ -9,17 +9,10 @@ function App() {
     return (
         <BrowserRouter>
             <div>
-
                 <Link to="/useRef">useRef</Link>
                 <br />
-                <Link to="/useMemoAfter">useMemoAfter</Link>
-                <br />
-                <Link to="/useMemoBefore">useMemoBefore</Link>
                 <br />
                 <Route exact path="/" component={Home}/>
-                <Route path="/useRef" component={Profile}/>
-                <Route path="/useMemoAfter" component={CountAfter}/>
-                <Route path="/useMemoBefore" component={CountBefore}/>
             </div>
         </BrowserRouter>
     )
