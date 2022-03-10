@@ -4,8 +4,6 @@ function App() {
         <BrowserRouter>
             <div>
                 <Link to="/useRef">useRef</Link>
-                <br />
-                <br />
                 <Route exact path="/" component={Home}/>
             </div>
         </BrowserRouter>
