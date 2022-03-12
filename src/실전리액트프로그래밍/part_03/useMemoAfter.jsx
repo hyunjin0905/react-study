@@ -6,7 +6,6 @@ const expensiveCalculation = (num) => {
     }
     return num;
 }
-
 export function CountAfter() {
     const [count, setCount] = useState(0);
     const [todos, setTodos] = useState([]);
