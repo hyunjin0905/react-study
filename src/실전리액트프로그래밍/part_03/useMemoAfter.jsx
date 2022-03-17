@@ -25,7 +25,7 @@ export function CountAfter() {
                 {todos.map((todo, index) => {
                     return <p key={index}>{todo}</p>;
                 })}
-                <button onClick={addTodo}>Add Todo</button>
+                <button onClick={addTodo}>Todo</button>
             </div>
             <hr />
             <div>
