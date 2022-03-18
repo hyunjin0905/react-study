@@ -29,7 +29,6 @@ export function CountAfter() {
             </div>
             <hr />
             <div>
-                Count: {count}
                 <button onClick={increment}>+</button>
                 <h2>Expensive Calculation</h2>
                 {calculation}
