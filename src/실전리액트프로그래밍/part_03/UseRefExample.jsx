@@ -7,6 +7,7 @@ export function Profile() {
     useEffect(() => {
         prevAgeRef.current = age
     }, [ age ])
+
     const prevAge = prevAgeRef.current
     const text = age === prevAge ? "same" : age > prevAge ? "older" : "younger"
     const onHandleClick = () => {
@@ -16,9 +17,6 @@ export function Profile() {
         <div>
             <p>{` age ${age} is ${text} than age ${prevAge}`}</p>
             <button onClick={onHandleClick}>나이변경</button>
-            <p>
-
-            </p>
         </div>
     )
 }
