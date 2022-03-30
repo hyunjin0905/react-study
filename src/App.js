@@ -3,7 +3,6 @@ function App() {
     return (
         <BrowserRouter>
             <div>
-                <Link to="/useRef">useRef</Link>
                 <Route exact path="/" component={Home}/>
             </div>
         </BrowserRouter>
