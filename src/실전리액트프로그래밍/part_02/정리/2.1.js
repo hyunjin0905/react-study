@@ -62,7 +62,6 @@ if (true) {
     let foo = "bar2"
     console.log(foo)
 }
-console.log(foo);
 
 // const 변수 재할당이 불가능하다
 // 객체의 내부 속성값은 수정 가능하다
