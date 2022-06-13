@@ -1,13 +1,13 @@
-import {BrowserRouter, Link, Route} from "react-router-dom";
-function App() {
+
+
+import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
+
+const queryClient = new QueryClient()
+
+export default function App() {
     return (
-        <BrowserRouter>
-            <div>
-                <Route exact path="/" component={Home}/>
-            </div>
-        </BrowserRouter>
+        <QueryClientProvider client={queryClient}>
+            {/* ...Components */}
+        </QueryClientProvider>
     )
-
 }
-
-export default App;
