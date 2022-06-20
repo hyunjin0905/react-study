@@ -1,4 +1,3 @@
-// 카운터 관련 상태 로직
 const INCREMENT = "counter/INCREMENT";
 const DECREMENT = "counter/DECREMENT";
 
