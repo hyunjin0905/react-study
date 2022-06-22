@@ -13,7 +13,7 @@ export default function reducer(state = initialState, action){
         case INCREMENT:
             return { number: state.number + 1 };
         case DECREMENT:
-            return { number: state.number -1 };
+            return { number: state.number - 1 };
         default:
          return state;
     }
