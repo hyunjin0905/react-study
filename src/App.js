@@ -1,7 +1,6 @@
 
 
-import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
-import {Route} from "react-router-dom";
+import { QueryClient, QueryClientProvider } from 'react-query'
 import RouterComponent from "./실전리액트프로그래밍/RouterComponent";
 
 const queryClient = new QueryClient()
