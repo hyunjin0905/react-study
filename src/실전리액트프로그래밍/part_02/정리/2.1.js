@@ -42,12 +42,8 @@ console.log(i);
 ///...
 console.log(myVar2) // myVar is not defined 참조에러
 var myVar2 = "1"; // undefined
-
-
 // 세번째
 // var 변수는 재정의가 가능하다
-
-
 // 해결 해줄 const , let 블록 스코프다
 if (true) {
     const k = 0

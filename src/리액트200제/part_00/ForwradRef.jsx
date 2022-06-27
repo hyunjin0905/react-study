@@ -23,9 +23,7 @@ const FieldOfContainer = () => {
         // 부모가 자신에게 ref object 넘겼는지 알수 없음
         // 넘기지 않으면 null 로 에러 남
         // setState 로 초기화 방법도 있지만
-        // -> useImperativeHandle  로 전딸된 메서드에만 적근 가능 컴포넌트간의 독립성 보장
-        console.log(props);
-        console.log(ref);
+        // -> useImperativeHandle  로 전딸된 메서드에만 접근 가능 컴포넌트간의 독립성 보장
         const inputRef = useRef(null);
         useImperativeHandle(ref, () => ({getValue() {
                 return inputRef.current.value
