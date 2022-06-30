@@ -23,7 +23,6 @@ for( var i = 0; i <= 10; i++) {
     console.log(i)
 }
 console.log(i);
-
 //해결 방법 즉시 실행 함수 사용
 (function () {
     var z = "즉시실행함수";
