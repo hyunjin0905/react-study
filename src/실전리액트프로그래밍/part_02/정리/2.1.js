@@ -17,7 +17,6 @@ function example2() {
 }
 example1()
 example2()
-
 //3. for 문을 벗어나도 변수가 사라지지 않는다
 for( var i = 0; i <= 10; i++) {
     console.log(i)
