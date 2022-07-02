@@ -83,9 +83,23 @@ async function getDataAsync2 () {
 }
 getDataAsync2()
 
+async function getData2 () {
+    const p1 = asyncFunc1()// 두개의 프로미스가 생성되고 각자의 비동기 코드가 실행된다
+    const p2 = asyncFunc2()// 두개의 프로미스가 생성되고 각자의 비동기 콛 가 실행된다
+    const data = await p1; // 두프로미스가 생성된후 기다리기 때문에 두개의 비동기 함수가 병렬로 처리 된다
+    const data2 = await p2;
+}
 
 
-
+class ThenableExample {
+    then(resolve, reject){
+        setTimeout(() => resolve(123), 100)
+    }
+}
+async function asyncfunc () {
+    const result = await new ThenableExample()
+    console.log(result)// 123
+}
 
 
 
