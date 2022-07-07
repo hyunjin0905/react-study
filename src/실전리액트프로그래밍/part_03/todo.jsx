@@ -5,6 +5,7 @@ function Todo() {
     const [currentId, setCurrentId] = useState(1);
     const [todoList, setTodoList] = useState([]);
     const [count, setCount] = useState(0); // todo 함수 외부에 선언
+    
     // 컴포넌트 메모이제이션을 위한 렌더링 최적화 발표하기
     // todolist 메모처리 안한거랑
     // 메모처리 한거 성능 비교!
