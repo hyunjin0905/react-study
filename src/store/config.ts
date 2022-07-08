@@ -7,12 +7,12 @@ const rootReducer = combineReducers({
     counter: counterSlice.reducer,
     todo: todoSlice.reducer,
 })
-const initialSate = {}
+const initialState = {}
 export const store = configureStore({
     reducer: rootReducer,
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(),
     devTools: process.env.NODE_ENV !== "production",
-    preloadedState: initialSate,
+    preloadedState: initialState,
     enhancers: (defaultEnhancers ) => [...defaultEnhancers]
 })
 
