@@ -21,12 +21,12 @@ function Todo() {
     }
     // onclick 도 새로 만들어진다
 
-    const onDelete = (e) =>  {
+    const onDelete = useCallback((e) =>  {
         const id = Number(e.target.dataset.id)
         const newTodoList = todoList.filter(todo => todo.id !== id);
         setTodoList(newTodoList)
-    }
-    //Todo함수가 실행될떄 onDelete 함수가 새로 만들어진다
+    }, [ todoList ])
+    // Todo 함수가 실행될떄 onDelete 함수가 새로 만들어진다
     const onData = () => {
         console.log(1234)
     }
