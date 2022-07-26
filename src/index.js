@@ -13,6 +13,7 @@ ReactDOM.render(
     <Provider store={store}>
         <App3/>
     </Provider>,
+    //setstate 하면 화면이 왜 리렌더
     document.getElementById('root')
 )
 // If you want to start measuring performance in your app, pass a function
