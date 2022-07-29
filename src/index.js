@@ -12,7 +12,7 @@ import store from "./store/config"
 ReactDOM.render(
     <Provider store={store}>
         <App3/>
-    </Provider>
+    </Provider>,
     document.getElementById('root')
 )
 
