@@ -48,7 +48,6 @@ function Title(props) {
 }
 
 function TodoListItem({ todoList, deleteTodo }) {
-    console.log("TODOLISTIME");
     return (
         <>
             {
