@@ -18,7 +18,6 @@ function Todo() {
         setCount(prev => prev + 1)
     }
     // onclick 도 새로 만들어진다
-
     const onDelete = useCallback((e) =>  {
         const id = Number(e.target.dataset.id)
         const newTodoList = todoList.filter(todo => todo.id !== id);
